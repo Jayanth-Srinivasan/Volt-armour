@@ -37,7 +37,7 @@ const BattParaForm = () => {
   
 
   return (
-    <main className="min-h-screen bg-[url('/assets/hero-bg.png')] w-full font-mont bg-[#161616] text-stone-200">
+    <main className="min-h-screen bg-[url('/assets/hero-bg.png')] w-full font-mont  text-stone-200">
       <section className="p-4 md:px-16 lg:max-w-4xl lg:mx-auto font-mont py-[50px] md:py-[80px]">
         <div className="mx-auto flex flex-col gap-4 text-center pb-[50px] md:pb-[80px]">
           <h2 className="text-3xl lg:text-5xl font-bold">Check Your Battery</h2>
@@ -49,7 +49,7 @@ const BattParaForm = () => {
         </div>
         <form
           onSubmit={handleSubmit}
-          className="w-full p-4 font-mont bg-[#1e1e1e] flex flex-col gap-4 rounded border border-white/10"
+          className="w-full p-4 font-mont bg-[#161616] flex flex-col gap-4 rounded border border-white/10"
         >
           <h1 className="font-bold text-xl md:text-2xl">Battery Details</h1>
           <div className="grid w-full items-center gap-1.5">
