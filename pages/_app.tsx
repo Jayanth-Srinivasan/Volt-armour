@@ -12,8 +12,7 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <main
       className={`${mont.variable}`}
-    >
-
+  >
       <Component {...pageProps} />
     </main>
 )}

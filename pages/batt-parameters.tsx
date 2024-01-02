@@ -1,9 +1,9 @@
-import Header from "@/components/layouts/Header";
 import React, { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Button } from "@/components/ui/button";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 const BattParaForm = () => {
   const router = useRouter();
@@ -28,8 +28,11 @@ const BattParaForm = () => {
 
 
   const handleSubmit = (e: React.ChangeEvent<HTMLFormElement>) => {
+    //add the validation here 
     e.preventDefault();
     console.log(values);
+    //do the api call here
+    alert("check the console for the values")
     router.push('/batt-health');
    
   };
@@ -37,6 +40,10 @@ const BattParaForm = () => {
   
 
   return (
+    <>
+   <Head>
+        <title>Battery Parameters | Volt Armour</title>
+   </Head>
     <main className="min-h-screen bg-[url('/assets/hero-bg.png')] w-full font-mont  text-stone-200">
       <section className="p-4 md:px-16 lg:max-w-4xl lg:mx-auto font-mont py-[50px] md:py-[80px]">
         <div className="mx-auto flex flex-col gap-4 text-center pb-[50px] md:pb-[80px]">
@@ -140,6 +147,7 @@ const BattParaForm = () => {
         </form>
       </section>
     </main>
+    </>
   );
 };
 
