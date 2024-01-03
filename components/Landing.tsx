@@ -9,7 +9,9 @@ function Landing() {
         <div className="flex flex-col gap-4 md:gap-8">
           <h1 className="text-3xl leading-tight md:text-6xl font-bold">
             Power Up Your Battery Testing:
-            <span className="text-[#FFCC00]">Lorem ipsum</span>
+            <span className="text-[#FFCC00]">
+               Volt Armour
+            </span>
           </h1>
           <p className="md:text-lg text-md font-medium font-mono">
             Revolutionize battery testing with our ML-driven platform. <br />

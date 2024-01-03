@@ -11,8 +11,8 @@ import Head from "next/head";
 
 function BattHealth() {
   //dummy data
-  const soh = 78;
-  const ttl = 6;
+  const soh = 100;
+  const ttl = 8;
   //get the data from the api call here
   return (
     <>

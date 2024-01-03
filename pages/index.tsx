@@ -7,6 +7,8 @@ export default function Home() {
     <>
       <Head>
         <title>Volt Armour</title>
+        <meta name="description" content="Volt Armour" />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className="bg-[#000000] ">
         <Header />
